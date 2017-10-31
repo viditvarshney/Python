@@ -1,0 +1,9 @@
+t=("name","python")
+x,y=t
+print(x)
+print(y)
+print(t)
+add="snake@python.org"
+user,domain=add.split('@')
+print(user)
+print(domain)

@@ -1,0 +1,5 @@
+tup=('a','b','c')
+print(type(tup))
+t=tuple('python')
+print(t)
+print(t[1:3])

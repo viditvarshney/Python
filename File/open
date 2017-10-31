@@ -1,0 +1,2 @@
+hand=open('kaus.txt','r')
+print(hand)
