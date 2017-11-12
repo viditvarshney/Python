@@ -1,0 +1,19 @@
+import random
+def main():
+    inp=input("Enter the word : ")
+    print(scramble(inp))
+def scramble(word):
+    char1=random.randint(1,len(word)-2)
+    char2=random.randint(1,len(word)-2)
+    while(char1==char2):
+        char2 = random.randint(1, len(word) - 2)
+    new=""
+    for i in range(len(word)):
+        if i==char1:
+            new=new+word[char2]
+        elif i==char2:
+            new=new+word[char1]
+        else:
+            new=new+word[i]
+    return new
+main()
